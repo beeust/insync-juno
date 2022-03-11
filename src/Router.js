@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Stake from './containers/Stake';
+import Transfer from './containers/Transfer';
 import Proposals from './containers/Proposals';
 
 const routes = [{
@@ -10,6 +11,9 @@ const routes = [{
 }, {
     path: '/stake',
     component: Stake,
+}, {
+    path: '/transfer',
+    component: Transfer,
 }, {
     path: '/proposals',
     component: Proposals,

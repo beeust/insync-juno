@@ -38,6 +38,7 @@ const variables = {
         all_validators: 'All Validators',
         staked_validators: 'Staked Validators',
         tokens: 'Tokens',
+        transfer: 'Transfer',
         done: 'Done',
         validator_details: 'Validator Details',
         all: 'All',

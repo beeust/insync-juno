@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../assets/OmniFlix.svg';
+// import logo from '../../assets/OmniFlix.svg';
 import './index.css';
 import DisconnectButton from './DisconnectButton';
 import Tabs from './Tabs';

@@ -20,7 +20,7 @@ class Tabs extends Component {
         const route = this.props.location.pathname && this.props.location.pathname.split('/') &&
             this.props.location.pathname.split('/')[1];
 
-        if (this.state.value !== route && (route === '' || route === 'stake' || route === 'proposals')) {
+        if (this.state.value !== route && (route === '' || route === 'stake' || route === 'transfer' || route === 'proposals')) {
             this.setState({
                 value: route,
             });
@@ -31,7 +31,7 @@ class Tabs extends Component {
         if (pp.location.pathname !== this.props.location.pathname) {
             const value = this.props.location.pathname.split('/')[1];
 
-            if (value !== this.state.value && (value === '' || value === 'stake' || value === 'proposals')) {
+            if (value !== this.state.value && (value === '' || value === 'stake' || value === 'transfer' || value === 'proposals')) {
                 this.setState({
                     value: value,
                 });
@@ -76,6 +76,12 @@ class Tabs extends Component {
                         label={variables[this.props.lang].stake}
                         value="stake"
                         onClick={() => this.handleChange('stake')}
+                        {...a11yProps(1)} />
+                    <Tab
+                        className={'tab ' + (this.state.value === 'transfer' ? 'active_tab' : '')}
+                        label={variables[this.props.lang].transfer}
+                        value="transfer"
+                        onClick={() => this.handleChange('transfer')}
                         {...a11yProps(1)} />
                     <Tab
                         className={'tab ' + (this.state.value === 'proposals' ? 'active_tab' : '')}
